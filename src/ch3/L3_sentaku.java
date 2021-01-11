@@ -68,5 +68,22 @@ public class L3_sentaku {
 	    		System.out.print(data[i] + " ");
 	    	}
 	    }
+
+	    // Maxを後ろから置いていく選択ソートp.150
+	    int [] data2 = {8, 6, 10, 4, 2};
+	    for (int i = data2.length-1; i >= 1; i--) {
+	    	int max = i;
+	    	for (int j = i - 1; j >= 0; j--) {
+	    		if (data2[max] < data2[j]) {
+	    			max = j;
+	    		}
+	    	}
+	    	int tmp2 = data2[i];
+	    	data2[i] = data2[max];
+	    	data2[max] = tmp2;
+	    }
+	    for (int i = 0; i < data2.length; i++) {
+	    	System.out.print(data2[i]);
+	    }
 	}
 }

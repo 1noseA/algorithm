@@ -50,7 +50,7 @@ public class L4_bubble {
 				}
 			}
 		}
-		for (int i = 0; i <data.length; i++) {
+		for (int i = 0; i < data.length; i++) {
 			System.out.print(data[i]);
 		}
 		System.out.println("");
